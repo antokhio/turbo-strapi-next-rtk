@@ -1,6 +1,7 @@
-# turbo-strapi-next-rtk
+# turbo-strapi-next-rtk [wip
 
-[wip] Monorepo strapi + next + turborepo.
+Example monorepo setup for strapi, next using turborepo.
+This example is fully typescript.
 
 ## Using this example
 
