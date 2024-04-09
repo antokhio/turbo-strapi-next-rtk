@@ -3,15 +3,39 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "develop": "tsup --watch",
+    "dev": "yarn develop",
+    "start": "yarn build",
+    "watch": "yarn dev",
+    "clean": "rimraf dist"
   },
   "author": "@antokhio",
   "license": "ISC",
   "devDependencies": {
     "@strapi/strapi": "^4.6",
-    "@strapi/types": "^4.6",
     "@types/node": "^18",
     "typescript": "^5",
-    "eslint": "^8"
+    "eslint": "^8",
+    "tsup": "6.7.0"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "tsup": {
+    "dts": true,
+    "bundle": false,
+    "treeshake": true,
+    "splitting": true,
+    "legacyOutput": false,
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "clean": false,
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts"
+    ]
   }
 }
