@@ -1,0 +1,44 @@
+{
+  "name": "@repo/backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "antokhio"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "dev": "yarn develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "types": "yarn types-shared",
+    "types-shared": "yarn strapi ts:generate-types --out-dir ./../_shared/src/types"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^4.6",
+    "@strapi/plugin-i18n": "^4.6",
+    "@strapi/plugin-users-permissions": "^4.6",
+    "@strapi/plugin-seo": "1.9.8",
+    "better-sqlite3": "^9.4.3",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@strapi-community/eslint-config": "0.4.3",
+    "@strapi/typescript-utils": "^4",
+    "@types/node": "18.18.3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "8e86a119-daab-4fa2-9dd0-2b1aa18dc479"
+  }
+}

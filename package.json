@@ -4,14 +4,30 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "types": "turbo types",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "prettier": "^3.2.5",
-    "turbo": "latest"
+    "@typescript-eslint/eslint-plugin": "7.6.0",
+    "@typescript-eslint/parser": "7.6.0",
+    "eslint": "8.57.0",
+    "turbo": "latest",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.1",
+    "typescript": "^5"
+  },
+  "resolutions": {
+    "@strapi/strapi": "4.22.1",
+    "@strapi/typescript-utils": "4.22.1",
+    "@strapi/plugin-i18n": "4.22.1",
+    "@strapi/plugin-users-permissions": "4.22.1",
+    "@types/node": "18.18.3",
+    "@types/react": "18.2.71",
+    "@types/react-dom": "18.2.22",
+    "typescript": "5.4.4"
   },
   "engines": {
     "node": ">=18"

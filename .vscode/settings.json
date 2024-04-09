@@ -1,0 +1,21 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "directory": "./apps/frontend",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./apps/backend",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./apps/_shared",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./packages",
+      "changeProcessCWD": true
+    }
+  ],
+  "files.eol": "\n"
+}
