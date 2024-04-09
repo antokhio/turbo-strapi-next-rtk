@@ -10,7 +10,7 @@
       "dependsOn": ["^lint"]
     },
     "dev": {
-      "dependsOn": ["@repo/backend#types"],
+      "dependsOn": ["backend#types"],
       "inputs": ["apps/**/*.ts", "apps/**/*.tsx", "packages/**/*.ts", "packages/**/*.tsx"],
       "cache": false
     },

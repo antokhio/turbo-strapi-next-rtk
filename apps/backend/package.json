@@ -1,5 +1,5 @@
 {
-  "name": "@repo/backend",
+  "name": "backend",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -21,12 +21,13 @@
     "@strapi/plugin-i18n": "^4.6",
     "@strapi/plugin-users-permissions": "^4.6",
     "@strapi/plugin-seo": "1.9.8",
-    "better-sqlite3": "^9.4.3",
+    "better-sqlite3": "9.4.3",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
+    "styled-components": "5.3.3",
+    "strapi-plugin-untransform-response": "0.1.7"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
