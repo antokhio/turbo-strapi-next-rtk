@@ -16,6 +16,6 @@
       "@root": ["/src"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../_shared/src/types/generated"],
   "exclude": ["node_modules"]
 }
