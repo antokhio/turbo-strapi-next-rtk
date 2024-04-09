@@ -17,7 +17,7 @@ go to `./apps/backend rename` `.env.example` to `.env`
 go to `./apps/frontend rename` `.env.example` to `.env`
 
 ```
-#### 3. Install dependincies
+#### 3. Install dependencies
 
 ```sh
 yarn
@@ -37,7 +37,7 @@ http://localhost:1337  your strapi backend
 ## Using this example
 
 `/apps/_shared/src/types/shared.ts` is place you can assemble types
-`/apps/fronend/features/layoutApi.ts` is where the example type is consumed
+`/apps/frontend/features/layoutApi.ts` is where the example type is consumed
 
  
  The idea behind, that you define and modify types in shared and then you can use them directly on frontend:
@@ -60,7 +60,7 @@ export const SomeComponent = ({...stuff}:Partial<SomeComponentType>): JSX.Elemen
 ### Apps and Packages
 
 - `@repo/shared`
-- `fronend`
+- `frontend`
 - `backend`
 - `@repo/eslint-config`: `eslint` configurations. `TODO`
 - `@repo/typescript-config`: `tsc` configurations `TODO`.
