@@ -13,9 +13,12 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@root": ["/src"]
+      "@root/*": ["/src/*"],
+      "@styles/*": ["/src/styles/*"],
+      "@store/*": ["./src/store/*"],
+      "@features/*": ["./src/features/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../_shared/src/types/generated"],
+  "include": ["next-env.d.ts", "next.config.js", "**/*.ts", "**/*.tsx", "../_shared/src/types/generated"],
   "exclude": ["node_modules"]
 }

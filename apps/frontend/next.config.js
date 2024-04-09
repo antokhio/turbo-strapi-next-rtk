@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   distDir: 'dist',
   reactStrictMode: true,
+  transpilePackages: [],
 };
-
-export default nextConfig;
