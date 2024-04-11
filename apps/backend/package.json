@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/shared": "*",
     "@strapi-community/eslint-config": "0.4.3",
     "@strapi/typescript-utils": "^4",
     "@types/node": "18.18.3"
