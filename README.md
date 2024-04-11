@@ -1,31 +1,71 @@
-# turbo-strapi-next-rtk
+# turbo-strapi-next-rtk [wip
 
-[wip] Monorepo strapi + next + turborepo.
+Example monorepo setup for strapi, next using turborepo. `Typescript` is first class citizen here.
 
-## Using this example
+## Installation
+
+#### 1. Clone repo
+
+```sh
+git clone git@github.com:antokhio/turbo-strapi-next-rtk.git ./my-strapi-next-project
+```
+
+#### 2. Setup `env's`
+
+```sh
+go to `./apps/backend rename` `.env.example` to `.env`
+go to `./apps/frontend rename` `.env.example` to `.env`
+
+```
+#### 3. Install dependencies
 
 ```sh
 yarn
-yarn build
+```
+
+#### 4. Start development mode
+```sh
 yarn dev
+```
+
+### Result
+```
+http://localhost:3000  your next js frontend
+http://localhost:1337  your strapi backend
+```
+
+## Using this example
+
+`/apps/_shared/src/types/shared.ts` is place you can assemble types
+`/apps/frontend/features/layoutApi.ts` is where the example type is consumed
+
+ 
+ The idea behind, that you define and modify types in shared and then you can use them directly on frontend:
+```ts
+ // /apps/_shared/src/types/shared.ts
+export type SomeComponent = StrapiComponent<'some.component'>
+
+// frontend/src/components/SomeComponent
+import { SomeComponent as SomeComponetType } from '@repo/shared'
+
+export const SomeComponent = ({...stuff}:Partial<SomeComponentType>): JSX.Element => {
+  return <>{...stuff}</>
+}
 ```
 
 ## What's inside?
 
-`apps/_shared` where the types are located.
-
 - TODO: add example types
-- TODO: add bundler
 
 ### Apps and Packages
 
 - `@repo/shared`
-- `fronend`
+- `frontend`
 - `backend`
 - `@repo/eslint-config`: `eslint` configurations. `TODO`
 - `@repo/typescript-config`: `tsc` configurations `TODO`.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Docker
 
 ### Build
 
