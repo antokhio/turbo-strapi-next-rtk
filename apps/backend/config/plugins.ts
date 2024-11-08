@@ -1,1 +1,1 @@
-export default ({ env }) => ({});
+export default () => ({});

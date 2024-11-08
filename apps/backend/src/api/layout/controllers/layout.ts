@@ -2,6 +2,6 @@
  * layout controller
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreController('api::layout.layout');
+export default factories.createCoreController("api::layout.layout");

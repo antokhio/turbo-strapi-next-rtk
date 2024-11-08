@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Build",
+  "compilerOptions": {
+    "outDir": "${configDir}/dist",
+    "rootDir": "${configDir}/src",
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "${configDir}/src/**/*.ts",
+    "${configDir}/src/**/*.tsx",
+    "${configDir}/src/**/*.cts",
+    "${configDir}/src/**/*.ctsx",
+    "${configDir}/src/**/*.mts",
+    "${configDir}/src/**/*.mtsx",
+    "${configDir}/src/**/*.js",
+    "${configDir}/src/**/*.jsx",
+    "${configDir}/src/**/*.cjs",
+    "${configDir}/src/**/*.cjsx",
+    "${configDir}/src/**/*.mjs",
+    "${configDir}/src/**/*.mjsx"
+  ]
+}

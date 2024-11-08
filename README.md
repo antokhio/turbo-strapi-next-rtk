@@ -1,4 +1,4 @@
-# turbo-strapi-next-rtk [wip
+# turbo-strapi-next-rtk [wip]
 
 Example monorepo setup for strapi, next using turborepo. `Typescript` is first class citizen here.
 

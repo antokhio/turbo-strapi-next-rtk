@@ -3,44 +3,47 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
-  "license": "MIT",
-  "author": {
-    "name": "antokhio"
-  },
   "scripts": {
+    "dev": "strapi develop",
     "build": "strapi build",
-    "dev": "yarn develop",
-    "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "types": "yarn types-shared",
-    "types-shared": "yarn strapi ts:generate-types --out-dir ./../_shared/src/types"
+    "deploy": "strapi deploy",
+    "lint": "eslint",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/strapi": "^4.6",
-    "@strapi/plugin-i18n": "^4.6",
-    "@strapi/plugin-users-permissions": "^4.6",
-    "@strapi/plugin-seo": "1.9.8",
-    "better-sqlite3": "9.4.3",
-    "pg": "8.8.0",
+    "@strapi/plugin-cloud": "5.3.0",
+    "@strapi/plugin-users-permissions": "5.3.0",
+    "@strapi/strapi": "5.3.0",
+    "better-sqlite3": "11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3",
-    "strapi-plugin-untransform-response": "0.1.7"
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/shared": "*",
-    "@strapi-community/eslint-config": "0.4.3",
-    "@strapi/typescript-utils": "^4",
-    "@types/node": "18.18.3"
+    "@app/shared": "*",
+    "@app/eslint-config": "*",
+    "@app/prettier-config": "*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "eslint": "^9"
   },
   "engines": {
-    "node": ">=18.0.0 <=20.x.x",
+    "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "8e86a119-daab-4fa2-9dd0-2b1aa18dc479"
-  }
+    "uuid": "f076af04-c728-4022-8736-ac008b02b539"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@app/eslint-config/base"
+    ]
+  },
+  "prettier": "@app/prettier-config"
 }
