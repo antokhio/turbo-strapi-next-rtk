@@ -3,7 +3,7 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["backend#types", "^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
@@ -13,6 +13,9 @@
     "format": {
       "outputs": [".cache/.prettiercache"],
       "outputLogs": "new-only"
+    },
+    "types": {
+      "cache": false
     },
     "dev": {
       "cache": false,

@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
-  "type": "module",
   "scripts": {
     "dev": "strapi develop",
     "build": "strapi build",
     "start": "strapi start",
     "deploy": "strapi deploy",
+    "types": "yarn types-shared",
+    "types-shared": "yarn strapi ts:generate-types --out-dir ./../_shared/src/types",
     "lint": "eslint",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "strapi": "strapi"
