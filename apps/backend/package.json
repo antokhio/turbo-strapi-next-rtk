@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
+  "type": "module",
   "scripts": {
     "dev": "strapi develop",
     "build": "strapi build",

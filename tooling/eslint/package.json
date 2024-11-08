@@ -6,7 +6,8 @@
   "exports": {
     "./base": "./base.js",
     "./next": "./next.js",
-    "./react": "./react.js"
+    "./react": "./react.js",
+    "./strapi": "./strapi.js"
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",
