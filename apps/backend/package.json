@@ -8,6 +8,7 @@
     "build": "strapi build",
     "start": "strapi start",
     "deploy": "strapi deploy",
+    "clean": "git clean -xdf .cache .strapi .turbo dist node_modules",
     "types": "yarn types-shared",
     "types-shared": "yarn strapi ts:generate-types --out-dir ./../_shared/src/types",
     "lint": "eslint",
