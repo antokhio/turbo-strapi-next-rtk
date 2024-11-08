@@ -10,6 +10,11 @@
     "plugins": [{ "name": "next" }],
     "module": "esnext"
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "src"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "src",
+    "../_shared/src/types/generated"
+  ],
   "exclude": ["node_modules"]
 }
