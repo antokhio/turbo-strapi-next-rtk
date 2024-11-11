@@ -7,6 +7,7 @@
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
     "types": "turbo types",
+    "prepare": "husky install",
     "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
     "format": "turbo run format --continue -- --cache --cache-location .cache/.prettiercache",
@@ -17,7 +18,8 @@
     "prettier": "^3.2.5",
     "turbo": "^2.2.3",
     "typescript": "5.5.4",
-    "eslint": "9.14.0"
+    "eslint": "9.14.0",
+    "husky": "9.1.6"
   },
   "engines": {
     "node": ">=18"

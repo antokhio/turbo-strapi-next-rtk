@@ -4,7 +4,8 @@
   "info": {
     "singularName": "layout",
     "pluralName": "layouts",
-    "displayName": "Layout"
+    "displayName": "Layout",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,6 +17,14 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.header"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

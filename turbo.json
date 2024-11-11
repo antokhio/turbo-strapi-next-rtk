@@ -5,9 +5,10 @@
     "build": {
       "dependsOn": ["backend#types", "^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", ".strapi"]
     },
     "dev": {
+      "dependsOn": ["backend#types"],
       "cache": false,
       "persistent": true
     },

@@ -1,0 +1,5 @@
+#!/bin/bash
+sh "$(dirname -- "$0")/_/husky.sh"
+sh "$(dirname -- "$0")/common.sh"
+
+yarn lint:staged
