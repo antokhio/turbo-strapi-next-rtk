@@ -10,6 +10,7 @@
     "prepare": "husky install",
     "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
+    "lint:staged": "lint-staged",
     "format": "turbo run format --continue -- --cache --cache-location .cache/.prettiercache",
     "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache"
   },
@@ -19,7 +20,8 @@
     "turbo": "^2.2.3",
     "typescript": "5.5.4",
     "eslint": "9.14.0",
-    "husky": "9.1.6"
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10"
   },
   "engines": {
     "node": ">=18"
